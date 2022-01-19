@@ -1,10 +1,13 @@
 import React from 'react';
 import classes from './consultant.module.sass';
 
-const Consultant = (props: any) => {
+export interface IProps {
+  src: string
+}
+const Consultant = (props: IProps) => {
   return (
     <div className={classes.container}>
-      basil
+      <img src={props.src} alt='' />
     </div>
   )
 }

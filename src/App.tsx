@@ -1,11 +1,11 @@
 import React from 'react';
 import classes from './App.module.sass';
-import Consultant from './components/consultants/consultant/consultant.component'
+import Consultants from './components/consultants/consultants.component'
 
 function App() {
   return (
     <div>
-     <Consultant />
+     <Consultants />
     </div>
   );
 }
