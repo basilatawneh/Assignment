@@ -2,11 +2,13 @@ import React from 'react';
 
 import classes from './button.module.sass';
 
-const Consultants = (props: any) => {
+export interface IProps {}
+
+const Button = (props: IProps) => {
   return (
     <div className={classes.container}>
     </div>
   )
 }
 
-export default Consultants;
+export default Button;

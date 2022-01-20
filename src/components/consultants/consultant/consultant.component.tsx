@@ -1,9 +1,11 @@
+import classnames from 'classnames';
 import React from 'react';
 import classes from './consultant.module.sass';
 
 export interface IProps {
-  src: string
+  src: string;
 }
+
 const Consultant = (props: IProps) => {
   return (
     <div className={classes.container}>

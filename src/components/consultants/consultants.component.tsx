@@ -4,6 +4,8 @@ import classes from './consultants.module.sass';
 
 import Consultant from './consultant/consultant.component';
 
+export interface IProps { }
+
 const photos = [
   {
     "albumId": 1,
@@ -48,7 +50,7 @@ const photos = [
     "thumbnailUrl": "https://via.placeholder.com/150/56a8c2"
   },
 ];
-const Consultants = (props: any) => {
+const Consultants = (props: IProps) => {
   return (
     <div className={classes.container}>
       {photos.map(item => <Consultant src={item.thumbnailUrl} key={item.id} />)}
