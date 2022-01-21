@@ -3,12 +3,12 @@ import React from 'react';
 import classes from './consultants.module.sass';
 
 import Consultant from './consultant/consultant.component';
-import useConsultants from '../../hooks/consultants.hook';
+import useFetchPhotos from '../../hooks/fetch-photos.hook';
 
 export interface IProps { }
 
 const Consultants = (props: IProps) => {
-  const photos = useConsultants();
+  const photos = useFetchPhotos();
   return (
     <div className={classes.container}>
       {photos.loading && <div className={classes.loading}>Loading...</div>}

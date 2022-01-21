@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+
 export interface IResults {
   albumId: number;
   id: number;
@@ -6,12 +7,13 @@ export interface IResults {
   url: string;
   thumbnailUrl: string;
 }
+
 export interface IState {
   loading: boolean;
   results: IResults[];
 }
 
-const useConsultants = () => {
+const useFetchPhotos = () => {
   const initialState: IState = {
     loading: true,
     results: []
@@ -30,4 +32,4 @@ const useConsultants = () => {
   return state;
 }
 
-export default useConsultants;
+export default useFetchPhotos;
