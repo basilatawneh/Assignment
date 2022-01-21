@@ -56,6 +56,6 @@ const Consultants = (props: IProps) => {
       {photos.map(item => <Consultant src={item.thumbnailUrl} key={item.id} />)}
     </div>
   )
-}
+};
 
 export default Consultants;
